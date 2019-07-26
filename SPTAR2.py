@@ -19,8 +19,4 @@ while(mock != 0):
         elif(len(num_list)!=0):
            stack_list.append(num_list[0])
            num_list.pop(0)
-        # print("stack_list")
-        # print(stack_list)
-        # print("num_list")
-        # print(num_list)
     mock = int(input())
