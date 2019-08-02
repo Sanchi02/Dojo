@@ -26,7 +26,6 @@ class SinglyLL:
         
 listy = SinglyLL()
 
-
 listy.insertAtHead(90)
 listy.insertAtHead(46)
 listy.insertAtHead(78)
