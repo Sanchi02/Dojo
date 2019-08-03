@@ -21,3 +21,5 @@ for t in range(int(input())):
             h.heappop(priorityHeap)
     print(abs(sum(priorityHeap)))
         
+# Instead of adding stuff one by one ot heap we can just add number to maintain the number of times the value will stay in the heap. 
+# Once the val is zero we can pop it off
