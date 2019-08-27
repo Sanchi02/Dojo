@@ -16,10 +16,6 @@ for r in range(row):
        if(pos[r][c]=='1'):
            hor.append(r)
            ver.append(c)
-print("hor")
-print(hor)
-print("ver")
-print(ver)
 
 hor.sort()
 ver.sort()
