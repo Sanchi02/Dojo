@@ -55,6 +55,20 @@ class SinglyLL:
             prevNode = currNode
             currNode = nextNode
         self.head = prevNode
+        
+    def reverseUtil(self, curr, prev): 
+        if curr.next is None : 
+            self.head = curr  
+            curr.next = prev 
+            return 
+        next = curr.next  
+        curr.next = prev 
+        self.reverseUtil(next, curr)  
+  
+    def reverse(self): 
+        if self.head is None: 
+            return 
+        self.reverseUtil(self.head, None)
                  
 listy = SinglyLL()
 
@@ -65,6 +79,10 @@ listy.insertAtLoc(45,4)
 listy.printList()
 print("Reversing")
 listy.reverseList()
-# listy.sizeOfList()
 listy.printList()
+print("Recursive reversal")
+listy.reverse()
+listy.printList()
+# listy.sizeOfList()
+
     
