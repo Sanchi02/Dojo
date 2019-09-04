@@ -31,17 +31,19 @@ class BinTree:
     def printTree(self, root):
         print(root.val)
         if(root.left!=None):
+            print("The root is {}, left child is {}".format(root.val,root.left.val))
             self.printTree(root.left)
         if(root.right!=None):
+            print("The root is {}, right child is {}".format(root.val, root.right.val))
             self.printTree(root.right)
                       
 treee = BinTree()
 
+treee.insert(4)
+treee.insert(5)
 treee.insert(1)
 treee.insert(2)
 treee.insert(3)
-treee.insert(4)
-treee.insert(5)
 treee.insert(6)
 treee.insert(7)
 
