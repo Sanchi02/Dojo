@@ -25,6 +25,8 @@
 # Explanation:
 # Testcase 1: One possible move for Knight is from 2, 6 to 4, 5 and then to 2, 4 which is our destination.]
 
+# For (x,y), horse moves : (x-1,y+2),(x-1,y-2),(x-2,y-1),(x-2,y+1),(x+1,y+2),(x+1,y-2),(x+2,y-1),(x+2,y+1)
+
 # dim = input()
 # arr = input()
 dim = [4,7]
@@ -49,7 +51,7 @@ visited = [[False]*Ymax for i in range(Xmax)]
 # print(visited)
 visited[Xcur-1][Ycur-1] = True
 while que:
-    print(que)
+    # print(que)
     axis = que.pop(0)
     # print(axis)
     if axis[0] == Xtar and axis[1] == Ytar:
